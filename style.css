@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    
+   
+ background-image: url(./maquette/img/fond.png);
+    display: grid;
+    grid-template-areas: ". header ."
+                         ". main ."
+                         ". footer .";
+    grid-template-columns: 1fr 750px 1fr;
+    
+}
+
+#header{
+    
+    grid-area: header;
+    background-color: hsla(66, 71%, 46%, 0.902);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+#header ul{
+   
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+#header li{
+    margin: 30px;
+    padding: 10px;
+    
+}
+#main{
+    background-color: white;
+    /* width: 100%; */
+    height: 600px;
+    grid-area: main;
+}
+#footer{
+    
+    grid-area: footer;
+    grid-column: 1/4;
+    
+
+}
+
+.icone{
+    color: hsla(66, 71%, 46%, 0.902); 
+    padding: 10px;
+ }
+ .image{
+     float: left;
+     width:  100px;
+ }
+ .container{
+     display: flex;
+     flex-direction: row;
+     
+ }
+ .paragraph1, .paragraph2{
+     padding: 10px;
+ }
+ .academy{
+     width: 80px;
+ }
+ #footer{
+     font-family: monospace;
+     text-align: center;
+     font-size: 10px;
+     padding-top: 10px;
+ }
+ .liste{
+    
+     margin-left: 60px;
+   
+ }
+ .bouton{
+     float: right;
+     background-color: hsla(66, 71%, 46%, 0.902);
+     padding: 10px;
+     margin: 20px;
+     border-style: none;
+     color: white;
+ }
+ .section1{
+     margin-bottom: 50px;
+ }
